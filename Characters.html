@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Characters - MUSO</title>
+  <style>
+    /* Your CSS styles here */
+    body {
+      background-color: black;
+      overflow: hidden; /* To prevent scrolling */
+    }
+
+    .header {
+      background-color: purple;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .header h1 {
+      font-size: 48px;
+      font-weight: bold;
+      color: white;
+      text-transform: uppercase;
+    }
+
+    /* Add a back button style */
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 18px;
+      color: white;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 150px); /* Adjust height based on header and footer heights */
+    }
+
+    .picture-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .picture-container img {
+      width: auto;
+      height: 500px;
+      border-radius: 5px;
+      cursor: pointer;
+      opacity: 1;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .picture-container img:hover {
+      opacity: 0.7;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .overlay.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .overlay p {
+      font-size: 24px;
+      font-weight: bold;
+      color: black;
+      text-align: center;
+    }
+
+    .footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .footer p {
+      font-size: 14px;
+    }
+
+    .character-info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 0;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .picture-container img:hover + .character-info {
+      opacity: 1;
+      height: 100px; /* Adjust height as needed */
+    }
+
+    .character-info p {
+      font-size: 18px;
+      font-weight: bold;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Characters</h1>
+  </div>
+
+ <a href="index.html" class="back-button">Back</a>
+
+  <div class="content">
+    <div class="picture-container">
+      <img src="C:\Documents\Html Projects\Quickees MUSO Site\Atabi.png" alt="Image 1">
+      <div class="character-info">
+        <p>Hailing from Greenthum, Atabi is a no so smart, sarcastic 14 year old who loves archery. He may be weak but he can shoot a bow!</p>
+  </div>
+  <div class="content">
+    <div class="picture-container">
+      <img src="C:\Documents\Html Projects\Quickees MUSO Site\Markus.png" alt="Image 2">
+      <div class="character-info">
+        <p>Markus is often known as the kid spending time in the flowers and constantly having his head in the clouds. Atabi being his best friend. The two have been through a lot together.</p>
+</div>
+  <div class="content">
+    <div class="picture-container">
+      <img src="C:\Documents\Html Projects\Quickees MUSO Site\Nuttalli.png" alt="Image 3">
+      <div class="character-info">
+        <p>Coming from what Atabi refers to as 'The Flip-Down', Nuttallii is a rebellious 15 year old who despises anything her mom tries to make her wear. Even if she's tough, she's not too great with magical abilities.</p>
+  </div>
+  <div class="content">
+    <div class="picture-container">
+      <img src="C:\Documents\Html Projects\Quickees MUSO Site\Casey.png" alt="Image 4">
+      <div class="character-info">
+        <p>Casey is a detective, and is good friends with Atabi's father, Adam. Despite living on his own in an apartment in Greenthum, he's often called into Bluesbird to investigate on crimes.</p>
